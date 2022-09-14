@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.firstDiv{
+  height: 100px;
+  width:100px;
+  background: red;
+}
+
+.firstDiv:hover{
+  animation: rotation infinite 3s linear;
+  animation-duration: 4s;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+    /* background: yellow; */
+  }
+  0%   {background-color: red;}
+  25%  {background-color: black}
+  50%  {background-color: blue}
+  100% {background-color: orange;}
+}
+
+.secondDiv{
+  height: 100px;
+  width:100px;
+  background: blue;
+}
+
+.secondDiv:hover{
+  transform: rotate(-20deg);
+}
+
+
+.thirdDiv{
+  height: 100px;
+  width:100px;
+  background: green;
+}
+
+.thirdDiv:hover{
+  transition: transform .3s ease;
+  transform: scale(2,2);
+
+}
+
+.fourthDiv{
+  height: 100px;
+  width:100px;
+  background: brown;
+}
+
+.fourthDiv:hover{
+  transition: transform .3s ease;
+  transform: skewX(50deg);
+  animation-fill-mode: forwards
+}
+
+.fifthDiv{
+  height: 100px;
+  width:100px;
+  background: orange;
+}
+
+.fifthDiv:hover{
+  transition: transform 2s ease-in-out;
+  transform: rotateY(250deg);
+  animation-delay: 5s;
+  animation-duration: 6s;
+  transition: transform 2s ease-in-out;
+  transform: rotateX(250deg);
+}
+
+.sixthDiv{
+  height: 100px;
+  width:100px;
+  background: violet;
+}
+
+.sixthDiv:hover{
+  transition: 2s ease-in-out;
+  animation-duration: 6s;
+  transform: rotateX(250deg);
+}
+
+.seventhDiv{
+  height: 100px;
+  width:100px;
+  background: purple;
+}
+
+.seventhDiv:hover{
+  transition: 1s linear;
+  transform: translate(100px);
+}
+
+#html-spinner{
+  width:40px;
+  height:40px;
+  border:4px solid #fcd779;
+  border-top:4px solid white;
+  border-radius:50%;
+}
+
+#html-spinner, #svg-spinner{
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1.2s;
+  -webkit-animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: rotate; 
+  -moz-animation-duration: 1.2s; 
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  
+  transition-property: transform;
+  animation-name: rotate; 
+  animation-duration: 1.2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+/* Rest of page style*/
+
+#container{
+  width:90%;
+  max-width:700px;
+  margin:1em auto;
+  position:relative;
+}
+
+/* spinner positioning */
+
+
+
+#html-para, #svg-para{
+  width:40%;
+  padding:5%;
+  text-align:center;
+}
