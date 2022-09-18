@@ -136,6 +136,43 @@
   border-radius: 10px;
 }
 
+.ninthDiv{
+  width: 100px;
+  height: 100px;
+  background: greenyellow;
+  position: relative;
+  animation-name: ninth;
+  transition:2s ease-in-out;
+  animation-duration: 2s ;
+  transform: translate(100px);
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-fill-mode: alternate;
+}
+
+@keyframes ninth{
+  0%{
+    top:0px;
+    left: 0px;
+  }
+  25%{
+    top: 250px;
+    left: 0px;
+  }
+  50%{
+    top: 250px;
+    left: 250px;
+  }
+  75%{
+    left:250px;
+    top:250px
+  }
+  100%{
+    top: 0px;
+    left: 250px;
+  }
+}
+
 #html-spinner{
   width:40px;
   height:40px;
