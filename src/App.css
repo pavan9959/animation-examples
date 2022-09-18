@@ -1,3 +1,9 @@
+/* to put nimations first we have to provide a name to animation to use at keyFrames */
+/* in key frames we can use from ,to or we can use percentages like 0,25,50,75,100 */
+/* then we can put animation duration  */
+/* transition:----it is used to controll the animation flow */
+/* transform :----this properti contains various effects like skew,rotate,translate */
+
 .App {
   text-align: center;
 }
@@ -98,6 +104,38 @@
 .seventhDiv:hover{
   transition: 1s linear;
   transform: translate(100px);
+}
+
+.eightthDiv{
+  height: 100px;
+  width:100px;
+  background: #fcd779;
+  overflow: scroll;
+  word-wrap: break-word;
+  /* or word-break:break-all */
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-x{
+  height: 2px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: azure;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: pink;
+  border-radius: 10px;
 }
 
 #html-spinner{
