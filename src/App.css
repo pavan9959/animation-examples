@@ -79,8 +79,6 @@
   transform: rotateY(250deg);
   animation-delay: 5s;
   animation-duration: 6s;
-  transition: transform 2s ease-in-out;
-  transform: rotateX(250deg);
 }
 
 .sixthDiv{
